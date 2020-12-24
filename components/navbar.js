@@ -42,7 +42,7 @@ export default function NavbarHead() {
     }
 
   const logUserIn = () => {
-    firbase.auth.signInWithPopup(provider).then(result => {
+    firebase.auth.signInWithPopup(provider).then(result => {
       let token = result.credential.accessToken
       storeUser(result.user, result.credential);
 
