@@ -11,7 +11,7 @@ import {
 
 import {useContext, useState} from 'react'
 import { UserContext } from './UserProviderContext'
-import { firebase, auth } from '../components/firebase'
+import firebase from '../components/firebase'
 import { useRouter } from 'next/router';
 
 export default function NavbarHead() {
@@ -42,7 +42,7 @@ export default function NavbarHead() {
     }
 
   const logUserIn = () => {
-    auth.signInWithPopup(provider).then(result => {
+    firbase.auth.signInWithPopup(provider).then(result => {
       let token = result.credential.accessToken
       storeUser(result.user, result.credential);
 

@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 import { useRouter } from 'next/router'
-import { auth } from './firebase'
+import firebase from './firebase'
 export const UserContext = createContext();
 const UserContextProvider = (props) => {
   const [ user, setUser ] = useState({});
@@ -9,8 +9,8 @@ const UserContextProvider = (props) => {
         userName: user.userName,
       })
   }
-
-  auth.onAuthStateChanged((user)=>{
+  
+  firebase.auth().onAuthStateChanged((user)=>{
       setUser(user)
   })
 
