@@ -51,7 +51,7 @@ export default function NavbarHead() {
     })
   }
   const logUserOut = () => {
-    auth.signOut();
+    firebase.auth().signOut();
   }
 
   return (
