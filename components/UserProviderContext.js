@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 import { useRouter } from 'next/router'
-import firebase from './firebase'
+import firebase from '../components/firebase'
 export const UserContext = createContext();
 const UserContextProvider = (props) => {
   const [ user, setUser ] = useState({});

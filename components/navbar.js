@@ -1,4 +1,4 @@
-import styles from '../../styles/Home.module.css'
+import styles from '../styles/Home.module.css'
 import {
     Navbar,
     NavbarBrand,
@@ -11,7 +11,7 @@ import {
 
 import {useContext, useState} from 'react'
 import { UserContext } from './UserProviderContext'
-import firebase from '../components/firebase'
+import firebase from './firebase'
 import { useRouter } from 'next/router';
 
 export default function NavbarHead() {

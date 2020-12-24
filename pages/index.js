@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Display from './display'
-import firebase from './components/firebase'
+import firebase from '../components/firebase'
 import { useCollectionData } from 'react-firebase-hooks/firestore'
 import Article from './[article]'
 

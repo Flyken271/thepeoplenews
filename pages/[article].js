@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import { Image, Card, Grid, Container } from 'semantic-ui-react'
-import firebase from './components/firebase'
+import firebase from '../components/firebase'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import { useCollectionData } from 'react-firebase-hooks/firestore'

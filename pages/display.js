@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css'
 import React, {useEffect, useState } from 'react'
-import ArticleCard from './components/articleCard'
-import { firebase } from './components/firebase'
+import ArticleCard from '../components/articleCard'
+import { firebase } from '../components/firebase'
 
 function Display( props ) {
 

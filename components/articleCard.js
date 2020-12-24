@@ -1,4 +1,4 @@
-import styles from '../../styles/Home.module.css'
+import styles from '../styles/Home.module.css'
 import { Card, Image } from 'semantic-ui-react'
 
 export default function ArticleCard(props) {
